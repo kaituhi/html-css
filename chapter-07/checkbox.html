@@ -1,0 +1,17 @@
+<!-- 
+- type="checkbox": Allows users to select multiple options.
+- name: Groups checkboxes; the server receives this with the selected option(s) values.
+- value: Specifies the value sent to the server if the checkbox is checked.
+- checked: Indicates which checkboxes should be checked when the page loads. 
+    Its value should be "checked".
+-->
+
+<form action="http://www.example.com/profile.php">
+  <p>
+    Please select your favorite music service(s):
+    <br />
+    <input type="checkbox" name="service" value="itunes" checked="checked" />
+    iTunes <input type="checkbox" name="service" value="lastfm" /> Last.fm
+    <input type="checkbox" name="service" value="spotify" /> Spotify
+  </p>
+</form>

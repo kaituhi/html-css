@@ -1,0 +1,20 @@
+<!-- 
+- type="radio": Creates radio buttons for selecting one option from a group.
+- name: Groups radio buttons; the server receives this with the selected option's value.
+- value: Specifies the value sent to the server for the selected option. 
+    Each button in the group should have a unique value.
+- checked: Indicates which radio button is selected when the page loads. 
+    Only one radio button in a group should have this attribute.
+-->
+
+<form action="http://www.example.com/profile.php">
+  <p>
+    Please select your favorite genre:
+    <br />
+    <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+    <input type="radio" name="genre" value="pop" />
+    Pop
+    <input type="radio" name="genre" value="jazz" />
+    Jazz
+  </p>
+</form>

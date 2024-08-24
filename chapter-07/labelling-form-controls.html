@@ -1,0 +1,16 @@
+<!-- Each form control should have a <label>. -->
+<!-- This helps everyone, including those using screen readers, 
+ understand what the control is for. -->
+
+<!-- There are two ways to use <label>: -->
+
+<!-- 1. Wrap the label text and the form control together: -->
+<!-- 2. Use <label> separately and connect it to the form control using the 'for' attribute. 
+ The 'for' attribute in <label> should match the 'id' of the form control -->
+
+<label>Age: <input type="text" name="age" /></label>
+<br/ > Gender:
+<input id="female" type="radio" name="gender" value="f" />
+<label for="female">Female</label>
+<input id="male" type="radio" name="gender" value="m" />
+<label for="male">Male</label>

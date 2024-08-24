@@ -1,0 +1,17 @@
+<!-- 
+The <input> element creates various form controls. The type attribute determines the input type.
+- type="text": Creates a single-line text input.
+- name: Each form control requires a name attribute to identify the data sent to the server 
+    (e.g., username, password).
+- maxlength: Limits the number of characters a user can enter. 
+    For example, maxlength="4" restricts input to four characters.
+- size: An outdated attribute used to set the width of a text input 
+    (number of characters visible). Use CSS for new forms to control width.
+-->
+
+<form action="http://www.example.com/login.php">
+  <p>
+    Username:
+    <input type="text" name="username" size="15" maxlength="30" />
+  </p>
+</form>
