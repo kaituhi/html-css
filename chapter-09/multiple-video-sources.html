@@ -1,0 +1,43 @@
+<!--
+To specify the video file location, 
+use <source> elements inside the <video> element 
+(replacing the src attribute on <video>).
+
+- src: Path to the video file.
+- type: Specifies the video format (e.g., "video/mp4").
+- codecs: Indicates the codec used for encoding (included in the type attribute).
+
+Use multiple <source> elements for different formats. 
+MP4 should be listed first to ensure compatibility with iPads.
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Video Sources</title>
+  </head>
+  <body>
+    <video
+      poster="images/puppy.jpg"
+      width="400"
+      height="320"
+      preload
+      controls
+      loop
+    >
+      <source
+        src="video/puppy.mp4"
+        type='video/
+mp4;codecs="avc1.42E01E, mp4a.40.2"'
+      />
+      <source
+        src="video/puppy.webm"
+        type='video/
+webm;codecs="vp8, vorbis"'
+      />
+      <p>A video of a puppy playing in the snow</p>
+    </video>
+  </body>
+</html>
