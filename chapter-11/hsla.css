@@ -1,0 +1,14 @@
+/* CSS3 introduces hsl for colors: 
+   - hue (0-360°) 
+   - saturation (%) 
+   - lightness (%: 0% white, 50% normal, 100% black) 
+   hsla adds alpha (0-1.0) for transparency, similar to rgba. */
+
+body {
+  background-color: #c8c8c8;
+  background-color: hsl(0, 0%, 78%);
+}
+p {
+  background-color: #ffffff;
+  background-color: hsla(0, 100%, 100%, 0.5);
+}

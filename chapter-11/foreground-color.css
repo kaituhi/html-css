@@ -1,0 +1,17 @@
+/* The color property sets text color. Specify in 3 ways: 
+   1. rgb: e.g., rgb(100,100,90) 
+   2. hex: e.g., #ee3e80 
+   3. color names: e.g., DarkCyan (147 predefined) */
+
+/* color name */
+h1 {
+  color: DarkCyan;
+}
+/* hex code */
+h2 {
+  color: #ee3e80;
+}
+/* rgb value */
+p {
+  color: rgb(100, 100, 90);
+}

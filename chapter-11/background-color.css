@@ -1,0 +1,18 @@
+/* CSS treats each element as a box. 
+   background-color sets the box's background. 
+   Specify color using RGB, hex, or names. 
+   If not set, background is transparent. 
+   To ensure a white background, use background-color on <body>. */
+
+body {
+  background-color: rgb(200, 200, 200);
+}
+h1 {
+  background-color: DarkCyan;
+}
+h2 {
+  background-color: #ee3e80;
+}
+p {
+  background-color: white;
+}
