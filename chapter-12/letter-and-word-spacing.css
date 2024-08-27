@@ -1,0 +1,19 @@
+/* Kerning ('letter-spacing') adjusts space between letters. 
+   Increase kerning for uppercase text; 
+   be cautious with normal case as it may reduce readability.
+
+   'word-spacing' controls space between words.
+   Values should be in ems and are added to the font's default spacing.
+   Default word gap is usually around 0.25em; 
+   adjust for readability with bold or spaced text. */
+
+
+h1,
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.credits {
+  font-weight: bold;
+  word-spacing: 1em;
+}

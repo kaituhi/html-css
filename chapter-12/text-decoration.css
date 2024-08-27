@@ -1,0 +1,13 @@
+/* text-decoration specifies text styling:
+   - none: removes decorations.
+   - underline: adds a line below text.
+   - overline: adds a line above text.
+   - line-through: adds a line through text.
+   - blink: makes text flash (generally discouraged). */
+
+.credits {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+}

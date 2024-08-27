@@ -1,0 +1,18 @@
+/* Browsers support different font formats. 
+   'format' specifies the font's file format.
+   Provide multiple formats for compatibility. */
+
+/* Font formats should be specified in this order:
+   1. eot
+   2. woff
+   3. ttf/otf
+   4. svg */
+
+@font-face {
+  font-family: "ChunkFiveRegular";
+  src: url("fonts/chunkfive.eot");
+  src: url("fonts/chunkfive.eot?#iefix") format("embedded-opentype"),
+    url("fonts/chunkfive.woff") format("woff"),
+    url("fonts/chunkfive.ttf") format("truetype"),
+    url("fonts/chunkfive.svg#ChunkFiveRegular") format("svg");
+}

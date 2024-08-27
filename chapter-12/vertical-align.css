@@ -1,0 +1,26 @@
+/* vertical-align is used to align inline elements (e.g., <img>, <em>) within their line box.
+   It does not vertically align text in block elements (<p>, <div>).
+   Values include:
+   - baseline
+   - sub
+   - super
+   - top
+   - text-top
+   - middle
+   - bottom
+   - text-bottom
+   It can also take a length (px, em) or percentage of line height. 
+
+   For example, if you have an image inside a line of text 
+   and you want it to align with the text's baseline or sit slightly higher or lower relative to the text, 
+   you’d use this property. */
+
+#six-months {
+  vertical-align: text-top;
+}
+#one-year {
+  vertical-align: baseline;
+}
+#two-years {
+  vertical-align: text-bottom;
+}

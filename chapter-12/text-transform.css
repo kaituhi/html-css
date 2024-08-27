@@ -1,0 +1,14 @@
+/* text-transform changes text case:
+   - uppercase: all text in uppercase.
+   - lowercase: all text in lowercase.
+   - capitalize: first letter of each word in uppercase. */
+
+h1 {
+  text-transform: uppercase;
+}
+h2 {
+  text-transform: lowercase;
+}
+.credits {
+  text-transform: capitalize;
+}

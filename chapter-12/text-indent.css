@@ -1,0 +1,16 @@
+/* The text-indent property indents the first line of text within an element.
+   You can specify the indent amount in pixels or ems.
+   It can also be set to a negative value, moving the text off the visible browser window.
+
+   This technique hides text off-screen, useful for accessibility and SEO, 
+   as seen with background images where the text is pushed far left (e.g., 9,999 pixels) 
+   to keep it out of view but still in the HTML for search engines and screen readers. */
+
+h1 {
+  background-image: url("images/logo.gif");
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+.credits {
+  text-indent: 20px;
+}

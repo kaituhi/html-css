@@ -1,0 +1,9 @@
+/* font-style creates italic or oblique text.
+   Values:
+   - normal: standard text style.
+   - italic: italic text.
+   - oblique: oblique text. */
+
+.credits {
+  font-style: italic;
+}

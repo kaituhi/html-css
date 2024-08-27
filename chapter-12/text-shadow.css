@@ -1,0 +1,33 @@
+/* The text-shadow property adds a shadow to text, 
+   creating effects like drop shadows or embossing.
+   It has four values:
+   - The first length: horizontal offset (left or right).
+   - The second length: vertical offset (top or bottom).
+   - The third (optional) value: blur radius (how much the shadow should be blurred).
+   - The fourth value: color of the shadow. */
+
+p.one {
+  background-color: #eeeeee;
+  color: #666666;
+  text-shadow: 1px 1px 0px #000000;
+}
+p.two {
+  background-color: #dddddd;
+  color: #666666;
+  text-shadow: 1px 1px 3px #666666;
+}
+p.three {
+  background-color: #cccccc;
+  color: #ffffff;
+  text-shadow: 2px 2px 7px #111111;
+}
+p.four {
+  background-color: #bbbbbb;
+  color: #cccccc;
+  text-shadow: -1px -2px #666666;
+}
+p.five {
+  background-color: #aaaaaa;
+  color: #ffffff;
+  text-shadow: -1px -1px #666666;
+}

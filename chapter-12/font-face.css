@@ -1,0 +1,14 @@
+/* @font-face allows using fonts not installed on the user's computer 
+   by specifying a path to download the font.
+   Ensure the font license allows this use. 
+   Use 'font-family' to name the font and 'src' to specify the path.
+   Provide multiple font paths for cross-browser compatibility. */
+
+@font-face {
+  font-family: "ChunkFiveRegular";
+  src: url("fonts/chunkfive.eot");
+}
+h1,
+h2 {
+  font-family: ChunkFiveRegular, Georgia, serif;
+}

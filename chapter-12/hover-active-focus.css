@@ -1,0 +1,29 @@
+/* Three pseudo-classes for user interaction:
+   - :hover: Applied when a user hovers over an element (e.g., links, buttons).
+   - :active: Applied when an element is being activated (e.g., button press, link click), 
+   often used to show a pressed state.
+   - :focus: Applied when an element is ready to be interacted with.
+   For example, when you click on a text box or press the Tab key to navigate to a button, 
+   that element gets focus. 
+
+   Use pseudo-classes in this order: :link, :visited, :hover, :focus, :active. 
+*/
+
+
+input {
+  padding: 6px 12px 6px 12px;
+  border: 1px solid #665544;
+  color: #ffffff;
+}
+input.submit:hover {
+  background-color: #665544;
+}
+input.submit:active {
+  background-color: chocolate;
+}
+input.text {
+  color: #cccccc;
+}
+input.text:focus {
+  color: #665544;
+}

@@ -1,0 +1,9 @@
+/* 'font-weight' creates bold text.
+   Common values:
+   - normal: standard text weight.
+   - bold: bold text.
+   Use normal to override bold text when needed. */
+
+.credits {
+  font-weight: bold;
+}

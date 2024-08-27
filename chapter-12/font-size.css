@@ -1,0 +1,15 @@
+/* font-size specifies the text size. Common units:
+  - pixels (px): precise control (e.g., 16px).
+  - percentages (%): relative to default size (16px) (e.g., 75% = 12px).
+  - ems (em): relative to the width of the letter 'm'. */
+
+body {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 12px;
+}
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 1.3em;
+}

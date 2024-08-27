@@ -1,0 +1,10 @@
+/* :first-letter and :first-line are pseudo-elements that style the first letter or line of text in an element.
+   They are used as if there were extra elements around the first letter or line that can be styled.
+   Pseudo-elements are added to selectors and styled like regular elements. */
+
+.intro:first-letter {
+  font-size: 200%;
+}
+p.intro:first-line {
+  font-weight: bold;
+}

@@ -1,0 +1,15 @@
+/* text-align controls text alignment:
+   - left: aligns text to the left.
+   - right: aligns text to the right.
+   - center: centers text.
+   - justify: stretches lines (except the last) to fill the container width. */
+
+h1 {
+  text-align: left;
+}
+p {
+  text-align: justify;
+}
+.credits {
+  text-align: right;
+}
