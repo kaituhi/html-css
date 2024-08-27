@@ -1,0 +1,43 @@
+<!-- 
+CSS selectors target specific HTML elements and are case-sensitive. 
+
+* {} - Targets all elements
+h1, h2, h3 {} - Targets <h1>, <h2>, <h3>
+.note {} - Targets elements with class "note"
+p.note {} - Targets <p> elements with class "note"
+#introduction {} - Targets element with id "introduction"
+li > a {} - Targets <a> elements inside <li>
+p a {} - Targets <a> elements within <p>
+h1 + p {} - Targets the first <p> after <h1>
+h1 ~ p {} - Targets all <p> elements that come after an <h1> in the same section.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors</title>
+  </head>
+  <body>
+    <h1 id="top">Kitchen Garden Calendar</h1>
+    <p id="introduction">
+      Here you can read our handy guide about what to do when.
+    </p>
+    <h2>Spring</h2>
+    <ul>
+      <li><a href="mulch.html"> Spring mulch vegetable beds</a></li>
+      <li><a href="potato.html"> Plant out early potatoes</a></li>
+      <li><a href="tomato.html"> Sow tomato seeds</a></li>
+      <li><a href="beet.html"> Sow beet seeds</a></li>
+      <li><a href="zucchini.html"> Sow zucchini seeds</a></li>
+      <li><a href="rhubarb.html"> Deadhead rhubarb flowers</a></li>
+    </ul>
+    <p class="note">
+      This page was written by
+      <a href="mailto:ivy@example.org"> ivy@example.org</a> for
+      <a href="http://www.example.org">Example</a>.
+    </p>
+    <p>
+      <a href="#top">Top of page</a>
+    </p>
+  </body>
+</html>

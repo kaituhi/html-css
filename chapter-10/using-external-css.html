@@ -1,0 +1,42 @@
+<!-- 
+The <link> element in HTML is used within the <head> to link a CSS file for styling the page. 
+It is an empty element, so it doesn't require a closing tag. It typically uses three attributes:
+
+- href: Specifies the path to the CSS file.
+- type: Indicates the type of document, usually "text/css".
+- rel: Defines the relationship, set to "stylesheet" for CSS files.
+
+Multiple CSS files can be linked by using multiple <link> elements. 
+For instance, one file may handle fonts and colors, while another controls layout.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using External CSS</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Potatoes</h1>
+    <p>
+      There are dozens of different potato varieties. They are usually described
+      as early, second early and maincrop.
+    </p>
+  </body>
+</html>
+
+<!-- 
+Why Use External Style Sheets?
+
+- Consistency: All pages share the same CSS file, reducing code repetition.
+- Performance: Faster page load times as the CSS is cached.
+- Maintenance: Edit one file to update styles across the site.
+- Clean HTML: Keeps HTML simpler and more readable.
+
+Inline CSS Considerations
+
+- Single Page: Useful for one-page sites or unique styles on individual pages.
+
+Note: Examples in this book use <style> in the <head> for simplicity, 
+but external CSS files are preferred.
+-->
