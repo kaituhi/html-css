@@ -1,0 +1,44 @@
+/*
+This example shows common CSS properties for styling text inputs:
+
+- `font-size`: Adjusts the text size entered by the user.
+- `color`: Sets the color of the text.
+- `background-color`: Sets the background color of the input box.
+- `border`: Adds a border around the input box.
+- `border-radius`: Creates rounded corners.
+
+Pseudo-classes:
+- `:focus`: Styles the input when it is active or being used.
+- `:hover`: Styles the input when hovered over by the user.
+
+Additional property:
+- `background-image`: Adds an image to the background of the input box. 
+Different images are applied based on the input's `id` attribute using attribute selectors.
+*/
+
+
+input {
+  font-size: 120%;
+  color: #5a5854;
+  background-color: #f2f2f2;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 5px 5px 5px 30px;
+  background-repeat: no-repeat;
+  background-position: 8px 9px;
+  display: block;
+  margin-bottom: 10px;
+}
+input:focus {
+  background-color: #ffffff;
+  border: 1px solid #b1e1e4;
+}
+input#email {
+  background-image: url("images/email.png");
+}
+input#twitter {
+  background-image: url("images/twitter.png");
+}
+input#web {
+  background-image: url("images/web.png");
+}

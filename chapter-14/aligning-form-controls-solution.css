@@ -1,0 +1,26 @@
+/*
+Form titles use <label> or <span> with the class "title". 
+Float property moves titles left; width ensures alignment. 
+Text-align and padding position text correctly. 
+<div> elements fix row widths and spacing. 
+Submit button is aligned to the right.
+*/
+
+div {
+  border-bottom: 1px solid #efefef;
+  margin: 10px;
+  padding-bottom: 10px;
+  width: 260px;
+}
+.title {
+  float: left;
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;
+}
+.radio-buttons label {
+  float: none;
+}
+.submit {
+  text-align: right;
+}

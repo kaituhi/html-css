@@ -1,0 +1,43 @@
+<!-- 
+The `list-style-type` property controls the style of list markers (bullets or numbers).
+
+1. For Unordered Lists (`<ul>`):
+   - `none`: No marker.
+   - `disc`: Default solid circle.
+   - `circle`: Hollow circle.
+   - `square`: Solid square.
+
+2. For Ordered Lists (`<ol>`):
+   - `decimal`: Numbers (1, 2, 3).
+   - `decimal-leading-zero`: Numbers with leading zero (01, 02, 03).
+   - `lower-alpha`: Lowercase letters (a, b, c).
+   - `upper-alpha`: Uppercase letters (A, B, C).
+   - `lower-roman`: Lowercase Roman numerals (i, ii, iii).
+   - `upper-roman`: Uppercase Roman numerals (I, II, III).
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ol {
+        list-style-type: lower-roman;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Complete Poems</h1>
+    <h2>Emily Dickinson</h2>
+    <ol>
+      <li>Life</li>
+      <li>Nature</li>
+      <li>Love</li>
+      <li>Time and Eternity</li>
+      <li>The Single Hound</li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!-- 
+The `list-style` property is a shorthand for setting the list's marker style, 
+image, and position in one declaration.
+
+- Syntax:
+  list-style: [list-style-type] [list-style-position] [list-style-image];
+
+- Example:
+  list-style: circle inside url('image.png');
+
+This combines:
+  - `list-style-type: circle;`
+  - `list-style-position: inside;`
+  - `list-style-image: url('image.png');`
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style: inside circle;
+        width: 300px;
+      }
+      li {
+        margin: 10px 0px 0px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quotes from Edgar Allan Poe</h1>
+    <ul>
+      <li>I have great faith in fools; self-confidence my friends call it.</li>
+      <li>All that we see or seem is but a dream within a dream.</li>
+      <li>
+        I would define, in brief, the poetry of words as the rhythmical creation
+        of Beauty.
+      </li>
+    </ul>
+  </body>
+</html>

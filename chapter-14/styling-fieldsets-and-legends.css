@@ -1,0 +1,31 @@
+/*
+Fieldsets help group related information in a form, 
+and the legend describes the content within the fieldset. 
+
+Key properties include:
+
+- `width`: Controls the width of the fieldset, affecting how form elements wrap.
+- `color`: Sets the text color.
+- `background-color`: Changes the background color behind the fieldset and legend.
+- `border`: Manages the appearance of borders around the fieldset and legend.
+- `border-radius`: Rounds the corners of the fieldset and legend.
+- `padding`: Adds space inside the fieldset and legend.
+
+These properties help to style and organize forms effectively.
+*/
+
+fieldset {
+  width: 350px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: right;
+}
+legend {
+  background-color: #efefef;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+}

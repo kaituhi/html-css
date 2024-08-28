@@ -1,0 +1,51 @@
+/*
+This example demonstrates CSS properties used to style submit buttons:
+
+- `color`: Changes the text color on the button.
+- `text-shadow`: Adds a 3D effect to the text.
+- `border-bottom`: Thicker bottom border gives a 3D effect.
+- `background-color`: Sets the button's background color to make it stand out.
+- `background-image` with gradient: Adds a gradient background.
+
+Pseudo-class:
+- `:hover`: Alters the button's appearance when hovered over; 
+changes the background color, darkens the text, and adjusts the border.
+
+The button inherits styles from the `<input>` element, 
+creating a consistent look for all buttons on the site.
+*/
+
+
+input#submit {
+  color: #444444;
+  text-shadow: 0px 1px 1px #ffffff;
+  border-bottom: 2px solid #b2b2b2;
+  background-color: #b9e4e3;
+  
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#beeae9),
+    to(#a8cfce)
+  );
+  background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+  background: -o-linear-gradient(top, #beeae9, #a8cfce);
+  background: -ms-linear-gradient(top, #beeae9, #a8cfce);
+}
+input#submit:hover {
+  color: #333333;
+  border: 1px solid #a4a4a4;
+  border-top: 2px solid #b2b2b2;
+  background-color: #a0dbc4;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#a8cfce),
+    to(#beeae9)
+  );
+  background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+  background: -o-linear-gradient(top, #a8cfce, #beeae9);
+  background: -ms-linear-gradient(top, #a8cfce, #beeae9);
+}

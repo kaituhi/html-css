@@ -1,0 +1,50 @@
+<!-- 
+The `border-spacing` property controls the space between adjacent table cells.
+
+Values:
+- Single value: Sets both horizontal and vertical spacing.
+- Two values: First value is for horizontal spacing, second for vertical spacing.
+- Usually specified in pixels.
+
+Note:
+When using `border-spacing`, adjacent borders are separate, so space is visible between cells. 
+
+The `border-collapse` property manages how borders between cells are treated:
+
+- `collapse`: Collapses adjacent borders into a single border. `border-spacing` and `empty-cells` are ignored.
+- `separate`: Keeps borders detached. `border-spacing` and `empty-cells` are applied.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        background-color: #0088dd;
+        padding: 15px;
+        border: 2px solid #000000;
+      }
+      table.one {
+        border-spacing: 5px 15px;
+      }
+      table.two {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="one">
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+    </table>
+  </body>
+</html>

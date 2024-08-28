@@ -1,0 +1,47 @@
+<!-- 
+The `list-style-position` property controls the position of list markers relative to the list item's content box.
+
+- Values:
+  - `outside`: Default; marker is outside the content box (to the left of the text).
+  - `inside`: Marker is inside the content box (indented with the text).
+
+Example:
+  - `list-style-position: inside;` makes the marker appear within the text block.
+
+In the example, setting a fixed width for the list forces text to wrap, showing the marker inside the text area. Margins between list items improve readability.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        width: 150px;
+      }
+      li {
+        margin: 10px;
+      }
+      ul.illuminations {
+        list-style-position: outside;
+      }
+      ul.season {
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="illuminations">
+      <li>That idol, black eyes and ...</li>
+      <li>Gracious son of Pan! ...</li>
+      <li>When the world is reduced ...</li>
+    </ul>
+    <ul class="season">
+      <li>Once, if my memory serves ...</li>
+      <li>Hadn't I once a youth ...</li>
+      <li>Autumn already! ...</li>
+    </ul>
+  </body>
+</html>

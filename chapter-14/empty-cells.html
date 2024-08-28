@@ -1,0 +1,44 @@
+<!-- 
+The `empty-cells` property controls the visibility of borders for empty table cells. 
+
+Values:
+- `show`: Displays borders for empty cells.
+- `hide`: Hides borders for empty cells.
+- `inherit`: Inherits the border visibility from the containing table if nested.
+
+Use this property to explicitly manage how empty table cells are displayed, 
+especially if you want to ensure consistent styling for borders around empty cells.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        border: 1px solid #0088dd;
+        padding: 15px;
+      }
+      table.one {
+        empty-cells: show;
+      }
+      table.two {
+        empty-cells: hide;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="one">
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
