@@ -1,0 +1,45 @@
+<!-- border-width: sets the width of a border.
+    Values can be pixels (e.g., 2px) or keywords (thin, medium, thick).
+    Use individual properties for specific borders:
+    - border-top-width
+    - border-right-width
+    - border-bottom-width
+    - border-left-width
+    You can also set all four borders in one line: 
+    border-width: top right bottom left; (clockwise order). -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      p.one {
+        border-width: 2px;
+        border-style: solid;
+      }
+
+      p.two {
+        border-width: thick;
+        border-style: solid;
+      }
+
+      p.three {
+        border-width: 1px 4px 12px 4px;
+        border-style: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="one">
+      Hohner's "Clavinet" is essentially an electric clavichord.
+    </p>
+    <p class="two">
+      Hohner's "Clavinet" is essentially an electric clavichord.
+    </p>
+    <p class="three">
+      Hohner's "Clavinet" is essentially an electric clavichord.
+    </p>
+  </body>
+</html>

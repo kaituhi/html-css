@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        The `border-image` property in CSS allows you to use an image as a border for an element.
+        It replaces the traditional border with an image, and you can control how this image is 
+        applied around the element.
+
+        The syntax for `border-image` is:
+        border-image: url(image) slice border-width / border-repeat;
+
+        - `url(image)`: Specifies the image to use for the border.
+        - `slice`: Defines how the image is divided into sections (top, right, bottom, left).
+        - `border-width`: Sets the width of the border.
+        - `border-repeat`: Controls how the image is repeated (e.g., `stretch`, `round`, `repeat`).
+
+        Example values:
+        - `stretch`: Stretches the image to fill the border area.
+        - `round`: Repeats the image and scales it to fit the border.
+        - `repeat`: Repeats the image without scaling.
+
+        In this example:
+        - `.one` uses `stretch` to stretch the image across the border.
+        - `.two` uses `round` to repeat and scale the image.
+
+        CSS Example for `.one` class:
+        - border-image: url("images/dots.gif") 11 11 11 11 stretch;
+        
+        CSS Example for `.two` class:
+        - border-image: url("images/dots.gif") 11 11 11 11 round;
+      */
+      
+      p.one {
+        border-image: url("images/dots.gif") 11 11 11 11 stretch;
+      }
+      p.two {
+        border-image: url("images/dots.gif") 11 11 11 11 round;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="one"></p>
+    <p class="two"></p>
+  </body>
+</html>

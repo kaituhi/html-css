@@ -1,0 +1,44 @@
+<!-- 
+You can create complex shapes with border-radius by 
+specifying different horizontal and vertical radii.
+
+- For non-uniform radii:
+  Example: border-radius: 80px 50px; 
+  (First value for horizontal radius, second for vertical radius)
+
+- Target a specific corner:
+  Example: border-top-left-radius: 80px 50px;
+  
+- Shorthand for all four corners:
+  Example: border-radius: 10px 20px 30px 40px / 15px 25px 35px 45px;
+  (First set of values for horizontal radii, second set for vertical radii)
+
+- Create a circle by making the border-radius equal to the box's width and height:
+  Example: border-radius: 50%;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      p.one {
+        border-top-left-radius: 80px 50px;
+      }
+      p.two {
+        border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+      }
+      p.three {
+        padding: 0px;
+        border-radius: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="one"></p>
+    <p class="two"></p>
+    <p class="three"></p>
+  </body>
+</html>

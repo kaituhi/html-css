@@ -1,0 +1,28 @@
+/* The box-shadow property adds a shadow around a box. It requires at least:
+    - horizontal offset: Moves the shadow left (negative values) or right.
+    - vertical offset: Moves the shadow up (negative values) or down.
+    - color: Defines the shadow color.
+    
+    Optional values include:
+    - Blur distance: Determines how blurry the shadow is. 
+    Without it, the shadow is sharp like a border.
+    - Spread distance: Expands (positive value) or contracts (negative value) the shadow.
+    - inset: Moves the shadow inside the box, creating an inner shadow.
+
+    box-shadow: horizontal-offset vertical-offset blur-radius spread-radius color inset */
+
+p.one {
+  box-shadow: -5px -5px #777777;
+}
+p.two {
+  box-shadow: 5px 5px 5px #777777;
+}
+p.three {
+  box-shadow: 5px 5px 5px 5px #777777;
+}
+p.four {
+  box-shadow: 0 0 10px #777777;
+}
+p.five {
+  box-shadow: inset 0 0 10px #777777;
+}

@@ -1,0 +1,48 @@
+<!-- margin: controls the space between boxes. 
+    Values are usually in pixels but can be percentages or ems. 
+
+    Margins collapse if one box is on top of another, using the larger margin.
+    If a box width is specified, margin adds to its width.
+    
+    Specify margins individually with:
+    - margin-top
+    - margin-right
+    - margin-bottom
+    - margin-left
+
+    Use shorthand to set all margins at once:
+    margin: top right bottom left; (clockwise order).
+
+    Somethimes you might see the following: 
+        margin: 10px 20px; sets left/right to 10px and top/bottom to 20px.
+
+    Margins are not inherited; set individually for each element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 200px;
+        border: 2px solid #0088dd;
+        padding: 10px;
+      }
+      p.example {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Analog synthesizers are often said to have a "warmer" sound than their
+      digital counterparts.
+    </p>
+    <p class="example">
+      Analog synthesizers are often said to have a "warmer" sound than their
+      digital counterparts.
+    </p>
+  </body>
+</html>

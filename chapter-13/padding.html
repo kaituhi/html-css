@@ -1,0 +1,40 @@
+<!-- padding: sets the space between an element's content and its border.
+    Values are usually in pixels, but percentages or ems can also be used.
+    Padding is added to the width of the box.
+    Specify padding for each side individually with:
+    - padding-top
+    - padding-right
+    - padding-bottom
+    - padding-left
+    Use shorthand to set all four paddings in one line:
+    padding: top right bottom left; (clockwise order).
+    Padding is not inherited by child elements; it must be set individually. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 275px;
+        border: 2px solid #0088dd;
+      }
+      p.example {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Analog synths produce a wave sound, whereas the sounds stored on a digital
+      synth have been sampled and then turned into numbers.
+    </p>
+    <p class="example">
+      Analog synths produce a wave sound, whereas the sounds stored on a digital
+      synth have been sampled and then ...
+    </p>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!-- By default, a box is sized to fit its content. 
+   To set custom dimensions, use the 'height' and 'width' properties.
+   Sizes can be set using:
+   - Pixels: precise control over the box's size.
+   - Percentages: relative to the parent container's size or the browser window.
+   - Ems: relative to the text size within the box.
+
+   Designers often use percentages and ems for flexible designs across different devices.
+
+   Example: A <div> with a size of 300px by 300px contains a paragraph set to 75% width and height, 
+   making it 225px by 225px.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style type="text/css">
+      div.box {
+        height: 300px;
+        width: 300px;
+        background-color: #bbbbaa;
+      }
+      p {
+        height: 75%;
+        width: 75%;
+        background-color: #0088dd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        The Moog company pioneered the commercial manufacture of modular
+        voltage-controlled analog synthesizer systems in the early 1950s.
+      </p>
+    </div>
+  </body>
+</html>
