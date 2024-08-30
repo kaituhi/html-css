@@ -1,0 +1,20 @@
+<!-- This page uses multiple <link> elements in the <head> to include separate stylesheets. 
+ `site.css` is similar to `styles.css` but without @import rules. 
+ When multiple rules apply to the same element, later rules take precedence. 
+ Here, rules in `typography.css` override those in `site.css` because `typography.css` is linked later. 
+ On the previous page, `styles.css` had precedence over `typography.css` due to the @import rule, 
+ which applies rules as the browser processes them. -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Style Sheets - Link</title>
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/tables.css" />
+    <link rel="stylesheet" type="text/css" href="css/typography.css" />
+  </head>
+  <body>
+    <!-- HTML page content here -->
+  </body>
+</html>

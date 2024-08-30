@@ -1,0 +1,45 @@
+<!-- Multiple columns on a web page are typically created using <div> elements for each column. 
+ To position columns side by side, use:
+
+- `width` to set the column width.
+- `float` to align columns next to each other.
+- `margin` to add gaps between columns.
+
+For a two-column layout, use two <div> elements: one for the main content and one for the sidebar. 
+Each <div> can contain headings, paragraphs, images, and other <div> elements. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .column1of2 {
+        float: left;
+        width: 620px;
+        margin: 10px;
+      }
+      .column2of2 {
+        float: left;
+        width: 300px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Evolution of the Bicycle</h1>
+    <div class="column1of2">
+      <h3>The First Bicycle</h3>
+      <p>
+        In 1817 Baron von Drais invented a walking machine that would help him
+        get around the royal gardens faster: two same-size ...
+      </p>
+    </div>
+    <div class="column2of2">
+      <h3>Bicycle Timeline</h3>
+      ...
+    </div>
+  </body>
+</html>

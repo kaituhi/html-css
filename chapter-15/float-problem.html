@@ -1,0 +1,27 @@
+<!-- When a container only has floated elements inside it, 
+ some browsers may collapse the container's height to zero. 
+ This happens because floated elements are taken out of the normal flow, 
+ so the container doesn't "see" their height. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid #665544;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Evolution of the Bicycle</h1>
+    <div>
+      <p>
+        In 1817 Baron von Drais invented a walking machine that would help him
+        get around the royal gardens faster...
+      </p>
+    </div>
+  </body>
+</html>

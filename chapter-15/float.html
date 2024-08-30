@@ -1,0 +1,41 @@
+<!-- The float property moves an element to the left or right of its container, 
+ allowing other content to flow around it. 
+ When using float, also set the element's width to avoid inconsistent results; 
+ otherwise, it may take up the full width of the container. 
+ 
+ In this example, a <blockquote> is floated to the right, 
+ and the following paragraphs flow around it. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=v, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      blockquote {
+        float: right;
+        width: 275px;
+        font-size: 130%;
+        font-style: italic;
+        font-family: Georgia, Times, serif;
+        margin: 0px 0px 10px 10px;
+        padding: 10px;
+        border-top: 1px solid #665544;
+        border-bottom: 1px solid #665544;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Evolution of the Bicycle</h1>
+    <blockquote>
+      "Life is like riding a bicycle. To keep your balance you must keep
+      moving." - Albert Einstein
+    </blockquote>
+    <p>
+      In 1817 Baron von Drais invented a walking machine that would help him get
+      around the royal gardens faster: two same-size in-line wheels, the front
+      one steerable, mounted in a frame ...
+    </p>
+  </body>
+</html>

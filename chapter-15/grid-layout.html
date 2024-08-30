@@ -1,0 +1,78 @@
+<!-- This HTML page uses the 960.gs grid system, with the CSS included via the <link> element in the <head>. 
+ The `960_12_col.css` stylesheet handles the grid layout with:
+ 
+- `container_12` for the 12-column grid container.
+- `clearfix` to fix height issues with floated elements.
+- `grid_12` for a block that spans 12 columns.
+- `grid_4` for a block that spans 4 columns.
+
+The stylesheet manages column widths and spacing. Custom styles added include:
+- Font and text positioning
+- Background colors
+- Heights for feature and article boxes
+- Margins for spacing between boxes -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid Layout</title>
+    <link rel="stylesheet" type="text/css" href="css/960_12_col.css" />
+    <style>
+      * {
+        font-family: Arial, Verdana, sans-serif;
+        color: #665544;
+        text-align: center;
+      }
+      #nav,
+      #feature,
+      .article,
+      #footer {
+        background-color: #efefef;
+        margin-top: 20px;
+        padding: 10px 0px 5px 0px;
+      }
+      #feature,
+      .article {
+        height: 100px;
+      }
+      li {
+        display: inline;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_12 clearfix">
+      <div id="header" class="grid_12">
+        <h1>Logo</h1>
+        <div id="nav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="feature" class="grid_12">
+        <p>Feature</p>
+      </div>
+      <div class="article grid_4">
+        <p>Column One</p>
+      </div>
+      <div class="article grid_4">
+        <p>Column Two</p>
+      </div>
+      <div class="article grid_4">
+        <p>Column Three</p>
+      </div>
+      <div id="footer" class="grid_12">
+        <p>&copy; Copyright 2011</p>
+      </div>
+    </div>
+    <!-- .container_12 -->
+  </body>
+</html>

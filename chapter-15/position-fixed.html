@@ -1,0 +1,43 @@
+<!-- Fixed positioning uses position: fixed; 
+ to keep an element in the same spot relative to the browser window, 
+ even when scrolling. 
+ 
+ The offset properties (top, bottom, left, right) control its position. 
+ 
+ In this example, the heading is fixed to the top-left corner. 
+ As the user scrolls, paragraphs move behind the heading. 
+ Since <p> elements are in normal flow, 
+ margin-top is used to push the first <p> below the fixed <h1>. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        position: fixed;
+        top: 0px;
+        left: 50px;
+        padding: 10px;
+        margin: 0px;
+        width: 100%;
+        background-color: #efefef;
+      }
+      p.example {
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <h1>The Evolution of the Bicycle</h1>
+      <p class="example">
+        In 1817 Baron von Drais invented a walking machine that would help him
+        get around the royal gardens faster...
+      </p>
+    </body>
+  </body>
+</html>

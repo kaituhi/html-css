@@ -1,0 +1,41 @@
+<!-- Block-level elements stack on top of each other by default. 
+ This is the normal flow, which doesn't need a CSS property, 
+ but you could use 'position: static;' to indicate it. 
+
+ The heading element stretches the full width of the browser, 
+ while the paragraphs are limited to 450px, 
+ showing how elements start on a new line even if they don't fill the width. 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 750px;
+        font-family: Arial, Verdana, sans-serif;
+        color: #665544;
+      }
+      h1 {
+        background-color: #efefef;
+        padding: 10px;
+      }
+      p {
+        width: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <h1>The Evolution of the Bicycle</h1>
+      <p>
+        In 1817 Baron von Drais invented a walking machine that would help him
+        get around the royal gardens faster...
+      </p>
+    </body>
+  </body>
+</html>

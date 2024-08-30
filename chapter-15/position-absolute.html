@@ -1,0 +1,38 @@
+<!-- With position: absolute;, the element is removed from normal flow, so it doesn't affect other elements. 
+ The offset properties (top, bottom, left, right) position it relative to its containing element. 
+ In this example, the heading is placed at the top of the page and 500px from the left, with a width of 250px. 
+ The <p> elements have a width set to avoid text overlap. 
+ 
+ Browsers typically add a top margin to the <h1>, 
+ creating a gap from the top of the browser. Use margin: 0px; to remove this gap. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        position: absolute;
+        top: 0px;
+        left: 500px;
+        width: 250px;
+      }
+      p {
+        width: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <h1>The Evolution of the Bicycle</h1>
+      <p>
+        In 1817 Baron von Drais invented a walking machine that would help him
+        get around the royal gardens faster...
+      </p>
+    </body>
+  </body>
+</html>

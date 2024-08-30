@@ -1,0 +1,45 @@
+<!-- Web authors often split CSS into multiple stylesheets for organization, 
+ such as separating layout, typography, and other elements. 
+ Two methods to include multiple stylesheets are:
+
+1. Linking one stylesheet in HTML, which uses the @import rule to include others.
+2. Using separate <link> elements in HTML for each stylesheet.
+
+In this example, the HTML uses one <link> to include `styles.css`, 
+which imports `typography.css` and `tables.css` using @import. 
+If using @import, it should be placed before other rules in the stylesheet. -->
+
+<!-- 
+#css/styles.css
+
+@import url("tables.css");
+@import url("typography.css");
+body {
+  color: #666666;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+#page {
+  width: 600px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #d6d6d6;
+  padding: 20px;
+}
+h3 {
+  color: #547ca0;
+}
+-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Style Sheets - Import</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HTML page content here -->
+  </body>
+</html>

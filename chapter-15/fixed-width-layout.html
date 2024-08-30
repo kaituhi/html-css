@@ -1,0 +1,84 @@
+<!-- A fixed-width layout sets the width of main boxes in pixels, 
+ making their size constant regardless of the browser window size. 
+ In contrast, a liquid layout adjusts its width to fill the browser window. 
+ To understand these layouts fully, view them in your browser and resize the window. -->
+
+<!-- The <body> element is set to a fixed width of 960 pixels and centered using auto margins. 
+ Main boxes have a 10-pixel margin for spacing. 
+ The navigation, feature, and footer panels stretch to the full width of the <body>, 
+ so no width is specified for them. 
+ The three columns are each 300 pixels wide and use float to align next to each other. 
+ 
+ Alternatively, a wrapper element might be used to set the page width and allow for different 
+ background colors for the content and browser window. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 960px;
+        margin: 0 auto;
+      }
+      #content {
+        overflow: auto;
+        height: 100%;
+      }
+      #nav,
+      #feature,
+      #footer {
+        background-color: #efefef;
+        padding: 10px;
+        margin: 10px;
+      }
+      .column1,
+      .column2,
+      .column3 {
+        background-color: #efefef;
+        width: 300px;
+        float: left;
+        margin: 10px;
+      }
+      li {
+        display: inline;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Logo</h1>
+      <div id="nav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content">
+      <div id="feature">
+        <p>Feature</p>
+      </div>
+      <div class="article column1">
+        <p>Column One</p>
+      </div>
+      <div class="article column2">
+        <p>Column Two</p>
+      </div>
+      <div class="article column3">
+        <p>Column Three</p>
+      </div>
+    </div>
+    <div id="footer">
+      <p>&copy; Copyright 2011</p>
+    </div>
+  </body>
+</html>

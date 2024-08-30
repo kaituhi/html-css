@@ -1,0 +1,21 @@
+/* With relative, fixed, or absolute positioning, boxes can overlap. 
+ Elements that appear later in the HTML code sit on top of earlier ones. 
+ To control stacking order, use the z-index property. 
+ A higher z-index value means the element is closer to the front, 
+ so an element with z-index: 10; will appear over one with z-index: 5;. */
+
+h1 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+  background-color: #efefef;
+  z-index: 10;
+}
+p {
+  position: relative;
+  top: 70px;
+  left: 70px;
+}

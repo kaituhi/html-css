@@ -1,0 +1,38 @@
+<!-- The float property is often used to place boxes next to each other. 
+ However, the height of floated elements can affect the positioning of following elements. 
+ In this example, the fourth paragraph starts under the third because the second paragraph blocks it from moving further left. 
+ Matching the height of all paragraphs could solve this, but it's not practical for varying content. 
+ The 'clear' property is a better solution for this issue. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 750px;
+        font-family: Arial, Verdana, sans-serif;
+        color: #665544;
+      }
+      p {
+        width: 230px;
+        float: left;
+        margin: 5px;
+        padding: 5px;
+        background-color: #efefef;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <h1>The Evolution of the Bicycle</h1>
+      <p>
+        In 1817 Baron von Drais invented a walking machine that would help him
+        get around...
+      </p>
+    </body>
+  </body>
+</html>
