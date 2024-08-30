@@ -1,0 +1,38 @@
+<!-- Images are inline by default and flow with text. 
+ To center an image, first set it to be a block-level element using `display: block`. 
+ Then, you can center it using one of these methods:
+
+1. Set `text-align: center` on the containing element.
+2. Set `margin: auto` on the image.
+
+Class names can be used to easily center images or any other elements, 
+similar to how you handle dimensions and alignment. -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      img.align-center {
+        display: block;
+        margin: 0px auto;
+      }
+      img.medium {
+        width: 250px;
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <img
+        src="images/magnolia-medium.jpg"
+        alt="Magnolia"
+        class="align-center medium"
+      /><b><i>Magnolia</i></b> is a large genus that contains over 200 flowering
+      plant species. It is named after French botanist Pierre Magnol and, having
+      evolved before bees appeared, the flowers were developed to encourage
+      pollination by beetle.
+    </p>
+  </body>
+</html>
